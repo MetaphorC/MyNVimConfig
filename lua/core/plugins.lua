@@ -33,6 +33,14 @@ use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 use('nvim-treesitter/playground')
 use('mbbill/undotree')
 use('tpope/vim-fugitive')
+use {
+  'vyfor/cord.nvim',
+  branch = 'master',
+  run = ':Cord update',
+  config = function()
+    require('cord').setup()
+  end
+}
 use "nvim-lua/plenary.nvim" -- don't forget to add this one if you don't have it yet!
 use {
     "ThePrimeagen/harpoon",
